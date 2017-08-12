@@ -18,22 +18,22 @@ int main() {
     double vMax, sensibilidad, factorMultiplicacion, gananciaVoltaje;
     double dBuSensi;
 
-    cout << "Calculo de limitación para un altavoz \n \n \n";
+    cout << "Calculate you limitation values to protect your speakers. \n \n \n";
     
-    cout << "Indique la potencia en Watts del amplificador: \n";
+    cout << "Enter power rating in Watts of your amplifier: \n";
     cin >> potenciaWatts;
     cout << endl;
     
-    cout << "Indique la impedancia a la cual está trabajando el amplificador: \n";
+    cout << "Enter the impedance (Z) at which the amplifier is working: \n";
     cin >> impedancia;
     cout << endl;
     
     vMax = sqrt(potenciaWatts*impedancia);
-    cout << "Máxima capacidad de voltaje: " << vMax << endl;
+    cout << "Maximium voltage capacity: " << vMax << endl;
     cout << endl;
    
     
-    cout << "Indique la ganancia de voltaje en dB: ";
+    cout << "Enter voltage gain in dB: ";
     cin >> gananciaVoltaje;
     cout << endl;
     
@@ -44,8 +44,8 @@ int main() {
     
     dBuSensi = 20*log10(sensibilidad/0.775);
     
-    cout << "Sensibilidad: " << sensibilidad << "v \n";
-    cout << "Umbral limitación: " << dBuSensi << endl;
+    cout << "Sensitivity: " << sensibilidad << "v \n";
+    cout << "Limitation Threshold: " << dBuSensi << endl;
     cout << endl;
     cout << endl;
     
